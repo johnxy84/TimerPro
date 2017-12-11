@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Add Timer"
+             x:Class="TimerPro.Views.AddTimerPage">
+    <ScrollView>
+         <StackLayout Margin="10" Spacing="5">
+             
+           <Label Text="Title" FontSize="13" />
+            <Entry Placeholder="Timer Title" />
+            <Label Text="Description" FontSize="13" />
+            <Entry Placeholder="Timer Description (optional)" />
+
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Choose Date" VerticalOptions="Center" HorizontalOptions="Start" />
+                <Switch IsToggled="True" VerticalOptions="Center" HorizontalOptions="End" />
+            </StackLayout>
+
+            <StackLayout Spacing="2">
+                <Label Text="Choose Days" HorizontalOptions="Start" FontSize="13" />
+                <Picker HorizontalOptions="StartAndExpand" />
+            </StackLayout>
+
+            <StackLayout Spacing="2">
+                <Label Text="Choose Date" HorizontalOptions="Start" FontSize="13" />
+                <DatePicker HorizontalOptions="Start" />
+            </StackLayout>
+             
+            <Button Text="Set Timer" HorizontalOptions="Center" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

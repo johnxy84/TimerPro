@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using TimerPro.Views;
 using Xamarin.Forms;
 
 namespace TimerPro
@@ -13,7 +13,7 @@ namespace TimerPro
         {
             InitializeComponent();
 
-            MainPage = new TimerPro.MainPage();
+            MainPage = new NavigationPage(new AddTimerPage());
         }
 
         protected override void OnStart()
